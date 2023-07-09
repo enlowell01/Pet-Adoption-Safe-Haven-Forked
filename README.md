@@ -10,10 +10,15 @@ GOALS:
 
 - Create the Safe Haven Home/landing page where a user may choose to browse available DOGS or CATS to adopt.
 - Create CREATE page to add a new adoptable dog or cat
-- Create READ pages for dogs and cats available to adopt
+
+- Create READ pages for ALL dogs and cats available to adopt
+  -Create READ page for EACH dog/cat that's available to adopt
+
 - Create UPDATE function to update existing adoption listings and adoptee status
+
 - Create DELETE function to remove adoptable pets. (Immediate removal? Removal after x number of days?)
-- Creat About Us page. Currently a catch-all place for display of group info and stretch goals?
+
+- Create About Us page. Currently a catch-all place for display of group info and stretch goals (coming soon features)?
 
 - DEPLOY continuously to a host (Netlify)
 - STYLE page by end of class next Sunday 7/16
