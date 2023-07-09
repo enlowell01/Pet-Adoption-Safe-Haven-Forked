@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Pet Adoption: Safe Haven
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This is the second milestone project for NCSU software development program by Casey, Evan, Ligia, and Mayna.
 
-## Available Scripts
+### This is a fullstack MERN application which allows the admin of the mock-up "Safe Haven Shelter" to CREATE new adoption listings, UPDATE those listings and locations, and DELETE them. It also allows users to READ the listings page and explore the website with a navbar.
 
-In the project directory, you can run:
+--- PROJECT DUE TUESDAY 7/18 ---
 
-### `npm start`
+GOALS:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create the Safe Haven Home/landing page where a user may choose to browse available DOGS or CATS to adopt.
+- Create CREATE page to add a new adoptable dog or cat
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create READ pages for ALL dogs and cats available to adopt
+  -Create READ page for EACH dog/cat that's available to adopt
 
-### `npm test`
+- Create UPDATE function to update existing adoption listings and adoptee status
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create DELETE function to remove adoptable pets. (Immediate removal? Removal after x number of days?)
 
-### `npm run build`
+- Create About Us page. Currently a catch-all place for display of group info and stretch goals (coming soon features)?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- DEPLOY continuously to a host (Netlify)
+- STYLE page by end of class next Sunday 7/16
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+STRETCH GOALS:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Donation to the shelter page
+- Other locations/shelters
+- Lost and found for pets. Would basically be user version of the admin side for listing cats, dogs, and other misc. pets
