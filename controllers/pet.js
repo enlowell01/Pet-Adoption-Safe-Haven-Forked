@@ -1,6 +1,6 @@
 const Pet = require("../models/Pet");
 
-async function getAllPet(req, res) {
+async function getAllPets(req, res) {
   try {
     const pet = await Pet.find();
     res.json(pet);
@@ -57,7 +57,7 @@ async function deletePetById(req, res) {
 }
 
 module.exports = {
-  getAllPet,
+  getAllPets,
   getPetById,
   createPet,
   deletePetById,

@@ -1,15 +1,17 @@
 const router = require("express").Router();
+
 const {
-  getAllPet,
+  getAllPets,
   getPetById,
   createPet,
   updatePetById,
   deletePetById,
-} = require("../controllers/Pet");
+} = require("../controllers/pet");
+
 const Pet = require("../models/Pet");
 
 // GET / get all Pets
-router.get("/", getAllPet);
+router.get("/", getAllPets);
 
 // GET /:id get Pet by id
 router.get("/:id", getPetById);
