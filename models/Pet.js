@@ -1,31 +1,36 @@
 const mongoose = require("mongoose");
 
 const petSchema = new mongoose.Schema({
-  category: {
+  image: {
     type: String,
-    enum: ["Dog", "Cat", "Other"],
+    default:
+      "https://unsplash.com/photos/Rk8fHGGeyr8",
   },
-  petName: {
+  name: {
     type: String,
-    required: true,
+  },
+  type: {
+    type: String,
+    // enum: ["Dog", "Cat"],
   },
   gender: {
     type: String,
-    enum: ["Female", "Male"],
+    // enum: ["Male", "Female"],
   },
   breed: {
     type: String,
-    required: true,
   },
   age: {
     type: String,
   },
-  image: {
+  adoptionStatus: {
     type: String,
-    default:
-      "https://e29koex2j9k.exactdn.com/wp-content/uploads/2022/11/cat-placeholder.svg",
+    // enum: ["Coming Soon", "Ready to Adopt", "Pending Adoption", "Adopted"],
   },
-  bio: {
+  introduction: {
+    type: String,
+  },
+  details: {
     type: String,
   },
 });
