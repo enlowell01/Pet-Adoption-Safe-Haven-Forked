@@ -53,7 +53,7 @@ async function deletePetById(req, res) {
   } catch (error) {
     console.log("error deleting pet:", error);
     res.json({ message: "error deleting pet" });
-  }
+  } 
 }
 
 module.exports = {

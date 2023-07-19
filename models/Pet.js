@@ -1,38 +1,42 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const petSchema = new mongoose.Schema({
-  image: {
+  //all pets have these fields
+  petType: {
     type: String,
-    default:
-      "https://unsplash.com/photos/Rk8fHGGeyr8",
+    required: true,
+    enum: ['dog', 'cat']
   },
-  name: {
+  petName: {
     type: String,
+    required: true,
   },
-  type: {
+  adoptionStatus: {
     type: String,
-    // enum: ["Dog", "Cat"],
   },
   gender: {
     type: String,
-    // enum: ["Male", "Female"],
+    required: true,
+    enum: ['male', 'female']
   },
   breed: {
     type: String,
   },
+  color: {
+    type: String,
+  },
   age: {
-    type: String,
+    type: String
   },
-  adoptionStatus: {
+  image: {
     type: String,
-    // enum: ["Coming Soon", "Ready to Adopt", "Pending Adoption", "Adopted"],
+    default:
+      "https://img.freepik.com/free-vector/cute-dog-cute-cat-cartoon-illustration_138676-3238.jpg",
+    //Image by catalyststuff on Freepik
   },
-  introduction: {
+  bio: {
     type: String,
-  },
-  details: {
-    type: String,
-  },
+  }
 });
 
 module.exports = mongoose.model("Pet", petSchema);
