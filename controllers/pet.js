@@ -36,8 +36,8 @@ async function updatePetById(req, res) {
   console.log(req.body);
   try {
     const { id } = req.params;
-    if (!req.body.image) req.body.image = undefined;
-    await Pet.findByIdAndUpdate(id, req.body);
+    //if (!req.body.image) req.body.image = undefined;//
+    await Pet.findByIdAndUpdate(id, req.body, /*{upsert:true, setDefaultsOnInsert:true}*/);
     res.status(204).json({ message: "pet updated" });
   } catch (error) {
     console.log("error updating pet:", error);
