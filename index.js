@@ -13,7 +13,6 @@ app.use(cors());
 
 // Routes
 app.use('/pets', petRoutes);
-// http://localhost:8080/pet
 
 // DB Connection
 mongoose.connect(process.env.MONGO_URI, { UseNewUrlParser: true, useUnifiedTopology: true })

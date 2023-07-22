@@ -35,21 +35,12 @@ const petSchema = new mongoose.Schema({
       } else {
         return 'http://placekitten.com/200/200';
       }
-    },
+    }
   },
   petBio: {
     type: String
   }
 });
-
-/*petSchema.pre('save', async function(next) {
-  const self = this;
-  await Object.keys(this.schema.paths).forEach(function(key) {
-    if(self.schema.paths[key].options.default && (self[key] === null || undefined || '')) {
-      self[key] = self.schema.paths[key].options.default;
-    }
-  });
-});*/
 
 
 module.exports = mongoose.model("Pet", petSchema);

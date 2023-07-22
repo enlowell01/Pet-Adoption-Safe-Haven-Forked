@@ -23,7 +23,6 @@ async function getPetById(req, res) {
 
 async function createPet(req, res) {
   try {
-    //if (!req.body.image) req.body.image = undefined;//
     await new Pet(req.body).save();
     res.status(201).json({ message: "pet created" });
   } catch (error) {
@@ -36,8 +35,7 @@ async function updatePetById(req, res) {
   console.log(req.body);
   try {
     const { id } = req.params;
-    req.body.image === '' ? req.body.image : undefined;
-    await Pet.findByIdAndUpdate(id, req.body, /*{upsert:true, setDefaultsOnInsert:true}*/);
+    await Pet.findByIdAndUpdate(id, req.body);
     res.status(204).json({ message: "pet updated" });
   } catch (error) {
     console.log("error updating pet:", error);
