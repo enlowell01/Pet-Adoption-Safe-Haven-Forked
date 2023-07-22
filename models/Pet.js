@@ -5,38 +5,42 @@ const petSchema = new mongoose.Schema({
   petType: {
     type: String,
     required: true,
-    enum: ['dog', 'cat']
+    enum: ['Dog', 'Cat']
   },
   petName: {
     type: String,
+    required: true
+  },
+  petAdoptionStatus: {
+    type: String,
+    required: true
+  },
+  petGender: {
+    type: String,
     required: true,
+    enum: ['Male', 'Female']
   },
-  adoptionStatus: {
-    type: String,
-  },
-  gender: {
-    type: String,
-    required: true,
-    enum: ['male', 'female']
-  },
-  breed: {
-    type: String,
-  },
-  color: {
-    type: String,
-  },
-  age: {
+  petBreed: {
     type: String
   },
-  image: {
+  petAge: {
     type: String,
-    default:
-      "https://img.freepik.com/free-vector/cute-dog-cute-cat-cartoon-illustration_138676-3238.jpg",
-    //Image by catalyststuff on Freepik
+    required: true
   },
-  bio: {
+  petImage: {
     type: String,
+    default: function() {
+      if (this.petType === 'Dog') {
+        return 'https://placedog.net/200/200';
+      } else {
+        return 'http://placekitten.com/200/200';
+      }
+    }
+  },
+  petBio: {
+    type: String
   }
 });
+
 
 module.exports = mongoose.model("Pet", petSchema);
