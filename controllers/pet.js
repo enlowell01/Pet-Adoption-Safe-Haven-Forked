@@ -3,7 +3,7 @@ const Pet = require("../models/Pet");
 
 // routes
 
-router.get("/", async function (req, res) {
+router.get('/', async function (req, res) {
   try {
     const pet = await Pet.find();
     res.json(pet);
@@ -61,7 +61,7 @@ module.exports = router;
 
 // seeds pets
 
-router.get("/data/seed", async function (req, res) {
+router.get('/data/seed', async function (req, res) {
   const data = [
     {
       petType: "Cat",
@@ -111,5 +111,5 @@ router.get("/data/seed", async function (req, res) {
   ];
 
   await Pet.insertMany(data);
-  res.status(303).redirect("/pets");
+  res.status(303).redirect('/pets');
 });

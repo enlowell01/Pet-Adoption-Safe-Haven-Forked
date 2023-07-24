@@ -22,3 +22,5 @@ mongoose.connect(process.env.MONGO_URI, { UseNewUrlParser: true, useUnifiedTopol
 const PORT = process.env.PORT 
 
 app.listen(PORT, console.log(`listening on port ${PORT}`))
+
+module.exports = app;
