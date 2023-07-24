@@ -32,7 +32,7 @@ const petSchema = new mongoose.Schema({
     default: function() {
       if (this.petType === 'Dog') {
         return 'https://placedog.net/200/200';
-      } else {
+      } else if (this.petType === 'Cat') {
         return 'http://placekitten.com/200/200';
       }
     }

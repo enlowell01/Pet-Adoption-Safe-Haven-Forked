@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
-const petRoutes = require('./routes/pet');
+const petRoutes = require('./controllers/pet');
 
 const app = express();
 
@@ -19,6 +19,6 @@ mongoose.connect(process.env.MONGO_URI, { UseNewUrlParser: true, useUnifiedTopol
   .then(() => console.log('DB connected'))
   .catch(err => console.error(err));
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT 
 
 app.listen(PORT, console.log(`listening on port ${PORT}`))

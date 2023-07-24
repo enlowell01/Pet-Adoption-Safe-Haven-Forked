@@ -1,4 +1,4 @@
-const router = require("express").Router();
+/*const router = require("express").Router();
 
 const {
   getAllPets,
@@ -79,5 +79,5 @@ router.get("/data/seed", async (req, res) => {
 
   await Pet.insertMany(data);
   res.status(303).redirect("/pets");
-});
+});*/
 
