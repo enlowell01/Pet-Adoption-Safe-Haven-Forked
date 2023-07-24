@@ -13,7 +13,7 @@ app.use(cors());
 
 // Allow Vercel origin
 app.use(cors({
-  origin: 'https://pet-adoption-safe-haven.vercel.app'
+  origin: 'https://safe-haven-pet-adoption.vercel.app'
 }));
 
 // Routes
