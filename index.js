@@ -9,12 +9,10 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-  origin: '*'
-}));
+app.use(cors());
 
 // Routes
-app.use('pets', petRoutes);
+app.use('/pets', petRoutes);
 
 // DB Connection
 mongoose.connect(process.env.MONGO_URI, { UseNewUrlParser: true, useUnifiedTopology: true })
@@ -25,4 +23,3 @@ const PORT = process.env.PORT
 
 app.listen(PORT, console.log(`listening on port ${PORT}`))
 
-module.exports = app;
