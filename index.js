@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 require('dotenv').config();
 
 const petRoutes = require('./controllers/pet');
@@ -7,11 +8,8 @@ const petRoutes = require('./controllers/pet');
 const app = express();
 
 // Middleware
-app.use((req, res, express) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  express.json();
-});
+app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use('/pets', petRoutes);
