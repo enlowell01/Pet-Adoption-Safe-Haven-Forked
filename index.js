@@ -14,7 +14,7 @@ app.use(cors({
 }));
 
 // Routes
-app.use('/pets', petRoutes);
+app.use('pets', petRoutes);
 
 // DB Connection
 mongoose.connect(process.env.MONGO_URI, { UseNewUrlParser: true, useUnifiedTopology: true })
