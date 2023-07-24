@@ -11,6 +11,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Allow Vercel origin
+app.use(cors({
+  origin: 'https://pet-adoption-safe-haven.vercel.app'
+}));
+
 // Routes
 app.use('/pets', petRoutes);
 
