@@ -1,30 +1,51 @@
 # Pet Adoption: Safe Haven
 
-## This is the second milestone project for NCSU software development program by Casey, Evan, Ligia, and Mayna.
+## This is the second milestone project for the NCSU software development program by Casey, Evan, Ligia, and Mayna.
 
-### This is a fullstack MERN application which allows the admin of the mock-up "Safe Haven Shelter" to CREATE new adoption listings, UPDATE those listings and locations, and DELETE them. It also allows users to READ the listings page and explore the website with a navbar.
+### This is a full stack MERN application which allows users of "Safe Haven Shelter" to CREATE new adoption listings for both cats and dogs, READ the adoption listings, UPDATE the adoption listings, and DELETE them. It also allows users to explore the website with a navbar and view an About page with Safe Haven Shelter's Mission.
 
---- PROJECT DUE TUESDAY 7/18 ---
+---
+### To install:
 
-GOALS:
+Clone from the repo and install npm will install require dependencies:
+```npm install```
 
-- Create the Safe Haven Home/landing page where a user may choose to browse available DOGS or CATS to adopt.
-- Create CREATE page to add a new adoptable dog or cat
+---
+### To run the backend:
 
-- Create READ pages for ALL dogs and cats available to adopt
-  -Create READ page for EACH dog/cat that's available to adopt
+* Note Node.js must be installed for application to run [Node JS](https://nodejs.org/en/download/)
 
-- Create UPDATE function to update existing adoption listings and adoptee status
+From the root directory run:
+``` npm run dev ```
 
-- Create DELETE function to remove adoptable pets. (Immediate removal? Removal after x number of days?)
+This will execute the script and output the following: 
+```
+> Pet-Adoption-Safe-Haven@1.0.0 dev
+> npx nodemon index.js
 
-- Create About Us page. Currently a catch-all place for display of group info and stretch goals (coming soon features)?
+[nodemon] 3.0.1
+[nodemon] to restart at any time, enter `rs`  
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+listening on port 8080
+DB connected
+  ```
 
-- DEPLOY continuously to a host (Netlify)
-- STYLE page by end of class next Sunday 7/16
+---
+### Link to the frontend:
 
-STRETCH GOALS:
+Open the frontend GitHub repository using the following link:
+https://github.com/cpeppsi/Safe-Haven-Front-End.git
 
-- Donation to the shelter page
-- Other locations/shelters
-- Lost and found for pets. Would basically be user version of the admin side for listing cats, dogs, and other misc. pets
+---
+### Project Design Goals:
+
+* Create the Safe Haven Home/landing page where a user may choose to browse available Pets to adopt
+* Create the CREATE new pet page to add a new dog or cat that's available to adopt
+* Create a READ page for EACH dog and cat that's available to adopt
+* Create UPDATE function to update existing adoption listings and adoptee status
+* Create DELETE function to remove cats and dogs that have been adopted or added in error 
+* Create an About Pet Adoption Safe Haven page
+* Style pages to have consistent format that is visually appealing
+* Application Deployment
